@@ -142,3 +142,14 @@ http {
 ```
 sudo ./certbot-auto renew --pre-hook "service nginx stop" --post-hook "service nginx start"
 ```
+
+
+# Using Amazon Tutorial 
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/SSL-on-an-instance.html#letsencrypt
+
+rembember to stop nginx before run certbot, use standalone mode
+### changed
+```
+sudo cerbot certonly
+```
+replace cert.pem and prviate.key in nginx.conf
