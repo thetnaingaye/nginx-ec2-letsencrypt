@@ -137,3 +137,8 @@ http {
 
 }
 ```
+
+### renew
+```
+sudo ./certbot-auto renew --pre-hook "service nginx stop" --post-hook "service nginx start"
+```
